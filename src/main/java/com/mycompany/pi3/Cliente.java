@@ -8,7 +8,7 @@ public class Cliente {
     private String nome;
     private String cpf;
     private String sexo;
-    private Date dtNascimento;
+    private String dtNascimento;
     private String estadoCivil;
     private String endereco;
     private String complemento;
@@ -18,7 +18,7 @@ public class Cliente {
     private String cidade;
     private String estado;
 
-    public Cliente(String nome, String cpf, String sexo, Date dtNascimento, String estadoCivil, 
+    public Cliente(String nome, String cpf, String sexo, String dtNascimento, String estadoCivil, 
             String endereco, String complemento, String numero, String bairro, String cep, 
             String cidade, String estado) {
         this.nome = nome;
@@ -70,11 +70,11 @@ public class Cliente {
         this.sexo = sexo;
     }
 
-    public Date getDtNascimento() {
+    public String getDtNascimento() {
         return dtNascimento;
     }
 
-    public void setDtNascimento(Date dtNascimento) {
+    public void setDtNascimento(String dtNascimento) {
         this.dtNascimento = dtNascimento;
     }
 

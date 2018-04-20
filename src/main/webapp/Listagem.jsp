@@ -5,12 +5,16 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Clientes</title>
     </head>
     <body>
+        <div>
+            <a href="CadastrarCliente.html">Cadastrar Cliente</a>
+        </div>
         <div style="width: 1200px; margin-left: auto; margin-right: auto;">
             <table cellpadding="10">
                 <tr>
+                    <th>ID</th>
                     <th>Nome</th>
                     <th>CPF</th>
                     <th>Sexo</th>
@@ -26,8 +30,10 @@
                 </tr>
                 <c:forEach items="${Listagem}" var="p">
                     <tr>
+                        <td>${p.id}</td>
                         <td>${p.nome}</td>
                         <td>${p.cpf}</td>
+                        <td>${p.sexo}</td>
                         <td>${p.dtNascimento}</td>
                         <td>${p.estadoCivil}</td>
                         <td>${p.endereco}</td>
@@ -38,8 +44,8 @@
                         <td>${p.cidade}</td>
                         <td>${p.estado}</td>
                         <td>
-                            <a href="Editar=${p.id}">Editar</a> 
-                            <a href="Deletar=${p.id}">Deletar</a> 
+                            <a href="EditCliente?id=${p.id}">Editar</a> 
+                            <a href="DeletCliente?id=${p.id}">Deletar</a> 
                         </td>
                     </tr>
                 </c:forEach>

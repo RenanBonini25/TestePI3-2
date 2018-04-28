@@ -65,12 +65,7 @@ public class CadastrarCliente extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
-            HttpSession sessao = request.getSession();
-            sessao.setAttribute("cliente", new Cliente());
-            
-            Cliente cliente = (Cliente) sessao.getAttribute("cliente");
-        
+          
             String nome = request.getParameter("TxtNome");
             String cpf = request.getParameter("TxtCPF");
             String sexo = request.getParameter("Sexo");
@@ -89,7 +84,7 @@ public class CadastrarCliente extends HttpServlet {
             String cidade = request.getParameter("TxtCidade");
             String estado = request.getParameter("Estados");
             
-            cliente = new Cliente (nome,cpf,sexo,data,estadoCivil,endereco,complemento,
+            Cliente cliente = new Cliente (nome,cpf,sexo,data,estadoCivil,endereco,complemento,
             numero,bairro,cep,cidade,estado);
             
         try {

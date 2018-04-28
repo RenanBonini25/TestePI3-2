@@ -9,7 +9,7 @@
     </head>
     <body>
         <div>
-            <a href="${pageContext.request.contextPath}/CadastrarCliente">Cadastrar Cliente</a>
+            <a href="${pageContext.request.contextPath}/CadastrarCliente.jsp">Cadastrar Cliente</a>
         </div>
         <div style="width: 1200px; margin-left: auto; margin-right: auto;">
             <table cellpadding="10">

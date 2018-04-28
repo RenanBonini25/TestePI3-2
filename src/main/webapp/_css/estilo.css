@@ -1,0 +1,9 @@
+#corpo{
+	float: right;
+}
+#dados{
+	border-style: solid;
+	padding: 20px;
+	border-width: 1px;
+	width: 1000px;
+}
